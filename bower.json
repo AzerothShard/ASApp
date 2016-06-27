@@ -1,0 +1,14 @@
+{
+  "name": "aaa",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "latest",
+    "angular-route": "latest",
+    "angular-resource": "latest",
+    "angular-storage": "latest",
+    "requirejs": "latest",
+    "bootstrap": "latest",
+    "jquery": "latest",
+    "oclazyload": "latest"
+  }
+}
