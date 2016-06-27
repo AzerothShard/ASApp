@@ -2,7 +2,7 @@
 
   'use strict';
 
-  var rootPath="/AAA/"
+  var rootPath="."
 
   var app = angular
     .module('app')
