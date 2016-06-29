@@ -8,9 +8,15 @@
     .module('azeroth')
     .config(config);
 
-  app.config.$inject = ['$routeProvider','$controllerProvider'];
+  app.config.$inject = ['$routeProvider','$controllerProvider', '$sceDelegateProvider'];
 
-  function config($routeProvider, $controllerProvider) {
+  function config($routeProvider, $controllerProvider, $sceDelegateProvider) {
+
+      $sceDelegateProvider.resourceUrlWhitelist([
+        'self',
+        'http://*.azerothshard.org/**',
+        'https://azerothshard.org/**'
+      ]);
 
     app.registerCtrl = $controllerProvider.register;
 

@@ -24,6 +24,7 @@
 
         $rootScope.toggle = function() {
           $("#wrapper").toggleClass("toggled");
+          console.log("toggle");
         }
 
       }

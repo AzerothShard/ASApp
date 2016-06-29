@@ -17,23 +17,40 @@
 
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
+      <a class="navbar-brand" ng-click="toggle()"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
-          <a href="#arena">
-            Azeroth Shard App
+            <a href="#pvp">
+                <img id="logo" src="app/assets/images/logo.png" alt="">
+            </a>
+        </li>
+        <li>
+          <a href="#pvp">
+            <img src="https://azerothshard.org/modules/tc-playermap/img/map/realm_on.gif" alt="">
+            <br />
+            PvP Stats
           </a>
         </li>
         <li>
-          <a href="#pvp">PvP Stats</a>
+          <a href="#arena">
+            <img src="https://azerothshard.org/modules/tc-playermap/img/map/realm_on.gif" alt="">
+            <br />
+            Arena
+          </a>
         </li>
         <li>
-          <a href="#arena">Arena</a>
+          <a href="#status">
+            <img src="https://azerothshard.org/modules/tc-playermap/img/map/realm_on.gif" alt="">
+            <br />
+            Status
+          </a>
         </li>
         <li>
-          <a href="#status">Status</a>
-        </li>
-        <li>
-          <a href="#map">Map</a>
+          <a href="#map">
+            <img src="https://azerothshard.org/modules/tc-playermap/img/map/realm_on.gif" alt="">
+            <br />
+            Map
+          </a>
         </li>
       </ul>
     </div>
@@ -43,7 +60,6 @@
     <div id="page-content-wrapper">
       <div class="container-fluid">
         <div class="row">
-          <div ng-include src="'app/components/partials/navbar.html'"></div>
           <div class="col-lg-12" ng-view>
 
           </div>

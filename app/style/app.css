@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'LifeCraft';
+  src: url(./../assets/fonts/LifeCraft.ttf);
+}
+
 iframe {
   width: 100%;
   height: 100%;
+}
+
+section {
+  z-index: -9999;
 }
 
 nav {
@@ -13,4 +22,16 @@ nav {
 div.col-lg-12 {
   padding-left: 0px;
   padding-right: 0px; 
+}
+
+div#page-content-wrapper {
+  padding: 0px !important;
+}
+
+img#logo {
+  width: 200px;
+}
+
+img {
+  width: 150px;
 }
