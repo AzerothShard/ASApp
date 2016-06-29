@@ -1,3 +1,3 @@
 ## PREVIEW:
 
-https://azerothshard.github.io/ASApp/#/arena
+http://azerothshard.github.io/ASApp/#/arena
