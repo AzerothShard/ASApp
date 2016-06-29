@@ -19,6 +19,14 @@ nav {
   border: 0px !important;
 }
 
+.navbar-button {
+  z-index: 9999;
+  position: absolute;
+  background-color: white;
+  top: 25px;
+  border-radius: 0px 11px 11px 0px;
+}
+
 div.col-lg-12 {
   padding-left: 0px;
   padding-right: 0px; 
