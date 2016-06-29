@@ -2,8 +2,9 @@
   'use strict';
 
   angular
-    .module('app', [
+    .module('azeroth', [
       'ngRoute',
+      'ngResource'
     ]);
   
 })();

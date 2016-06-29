@@ -5,7 +5,7 @@
   var rootPath="."
 
   var app = angular
-    .module('app')
+    .module('azeroth')
     .config(config);
 
   app.config.$inject = ['$routeProvider','$controllerProvider'];
@@ -17,7 +17,7 @@
     $routeProvider
       .when('/:view', {
         templateUrl: function(rd) {
-          return rootPath + '/app/views/' + rd.view + '/' + rd.view + '.html'
+          return rootPath + '/app/components/' + rd.view + '/' + rd.view + '.html'
         },
         resolve: {
           load: ['$q','$rootScope','$route', function($q, $rootScope, $route) {
@@ -25,7 +25,7 @@
 
               var deferred = $q.defer();
               
-              requirejs(["app/views/" + path + '/' + path + '.ctrl'], function(util) {
+              requirejs(["app/components/" + path + '/' + path + '.ctrl'], function(util) {
                   $rootScope.$apply(function() {
                     deferred.resolve();
                   });
@@ -34,7 +34,7 @@
           }]
         }
       })
-      .otherwise('/');
+      .otherwise('/arena');
   }
 
 })();

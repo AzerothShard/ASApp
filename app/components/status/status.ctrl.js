@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('app')
+    .module('azeroth')
     .registerCtrl('StatusController', StatusController);
     
     StatusController.$inject = ['$scope'];

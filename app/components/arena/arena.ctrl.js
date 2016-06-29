@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('app')
+    .module('azeroth')
     .registerCtrl('ArenaController', ArenaController);
 
     ArenaController.$inject = ['$scope'];

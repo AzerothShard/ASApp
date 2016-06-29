@@ -3,7 +3,7 @@
   'use strict';
 
   angular
-    .module('app')
+    .module('azeroth')
     .controller('AppController', AppController);
 
     AppController.$inject = ['$scope', '$rootScope'];
