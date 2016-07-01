@@ -25,7 +25,7 @@ nav {
 
 .navbar-button {
   z-index: 9999;
-  position: absolute;
+  position: fixed;
   background-color: #1f2225;
   top: 65px;
   border-radius: 0px 11px 11px 0px;
@@ -46,4 +46,38 @@ img#logo {
 
 img {
   width: 150px;
+}
+
+div.blog-main {
+  width: 100%;
+  padding: 15px;
+}
+
+.row {
+  margin: 0px;
+  width: 100%;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  width: 45%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #f4d03f, rgba(0, 0, 0, 0));
+}
+
+.title, .blog-post-title {
+  color: #f4d03f;
+}
+
+.text {
+  color: #ccc;
+}
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+
+.news {
+  margin: 25px;
 }

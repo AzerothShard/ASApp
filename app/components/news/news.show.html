@@ -1,10 +1,12 @@
 <section ng-controller="NewsShowController">
   
   <div class="col-sm-8 blog-main">
+
     <div class="blog-post">
+
       <h2 class="blog-post-title">{{news.title}}</h2>
       <p class="blog-post-meta">{{news.date}} da {{news.author}}</p>
-      <div ng-bind-html="news.text | to_trusted"></div>
+      <div class="text" ng-bind-html="news.text | to_trusted"></div>
 
     </div>
 

@@ -4,7 +4,6 @@
 
   angular
     .module('azeroth')
-    // .factory('News', News)
     .controller('AppController', AppController);
 
   AppController.$inject = ['$scope', '$rootScope'];
