@@ -21,7 +21,6 @@
       function initialize() {
 
         console.log("ArenaController");
-        $scope.ctrl = 'ArenaController';
 
       }
     }

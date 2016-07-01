@@ -1,33 +1,34 @@
-(function() {
+(function () {
 
   'use strict';
 
   angular
     .module('azeroth')
+    // .factory('News', News)
     .controller('AppController', AppController);
 
-    AppController.$inject = ['$scope', '$rootScope'];
+  AppController.$inject = ['$scope', '$rootScope'];
 
-    function AppController($scope, $rootScope) {
+  function AppController($scope, $rootScope) {
 
-      var ac = this;
+    var ac = this;
 
-      ac.initialize = initialize;
-      
-      ac.initialize();
+    ac.initialize = initialize;
 
-      return ac;
+    ac.initialize();
 
-      function initialize() {
+    return ac;
 
-        console.log("AppController");
+    function initialize() {
 
-        $rootScope.toggle = function() {
-          $("#wrapper").toggleClass("toggled");
-          console.log("toggle");
-        }
+      console.log("AppController");
 
+      $rootScope.toggle = function () {
+        $("#wrapper").toggleClass("toggled");
+        console.log("toggle");
       }
+
     }
+  }
 
 })();

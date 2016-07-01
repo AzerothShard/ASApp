@@ -21,7 +21,6 @@
       function initialize() {
 
         console.log("StatusController");
-        $scope.ctrl = 'StatusController';
 
       }
     }
