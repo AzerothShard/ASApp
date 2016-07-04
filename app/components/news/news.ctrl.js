@@ -17,7 +17,7 @@
       url,
       { title: '@title' },
       {
-        getNewses: { method: 'GET', url: url, isArray: true },
+        getNewses: { method: 'GET', url: url, isArray: false },
         getNews: { method: 'GET', url: url, isArray: false }
       }
     );
@@ -46,7 +46,7 @@
       var news = new News($resource, API_URL);
 
       news.getNewses().$promise.then(function (res) {
-        $scope.newses = res;
+        $scope.posts = res;
       });
 
     }

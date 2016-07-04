@@ -13,6 +13,6 @@
       };
     }])
 
-    .constant('API_URL', 'http://asapp-api.azurewebsites.net/news.php/');
+    .constant('API_URL', 'https://public-api.wordpress.com/rest/v1.1/sites/azerothshard.org/posts/');
 
 })();

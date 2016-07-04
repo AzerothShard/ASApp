@@ -1,14 +1,14 @@
 <section ng-controller="NewsController">
 
-  <div ng-repeat="news in newses">
+  <div ng-repeat="news in posts.posts">
 
     <div class="row">
 
       <div class="news">
-        <a href="#news/{{news.api_title}}"><h3 class="title" ng-bind-html="news.title | to_trusted"></h3></a>
-        <p class="text-muted"><span class="glyphicon glyphicon-calendar"></span>{{news.date}}</p>
-        <p class="text" ng-bind-html="news.text | to_trusted"></p>
-        <p ng-if="news.author" class="text-muted">Autore <a>{{news.author}}</a></p>
+        <a href="#news/{{news.ID}}"><h3 class="title">{{news.title}}</h3></a>
+        <p class="text-muted"><span class="glyphicon glyphicon-calendar"></span> {{news.date | date:'medium'}}</p>
+        <p class="text" ng-bind-html="news.excerpt | to_trusted"></p>
+        <p ng-if="news.author" class="text-muted">Autore <a>{{news.author.login}}</a></p>
       </div>
 
     </div>

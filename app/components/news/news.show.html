@@ -5,8 +5,8 @@
     <div class="blog-post">
 
       <h2 class="blog-post-title">{{news.title}}</h2>
-      <p class="blog-post-meta">{{news.date}} da {{news.author}}</p>
-      <div class="text" ng-bind-html="news.text | to_trusted"></div>
+      <p class="blog-post-meta">{{news.date | date:'medium'}} da {{news.author.login}}</p>
+      <div class="text" ng-bind-html="news.content | to_trusted"></div>
 
     </div>
 
