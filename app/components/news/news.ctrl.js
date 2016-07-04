@@ -45,6 +45,8 @@
 
       var news = new News($resource, API_URL);
 
+      $scope.filter = '';
+
       news.getNewses().$promise.then(function (res) {
         $scope.posts = res;
       });
