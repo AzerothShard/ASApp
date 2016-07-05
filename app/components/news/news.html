@@ -1,13 +1,17 @@
 <section ng-controller="NewsController">
 
-  <input type="text" ng-model="filter">
+  <nav>
+    <input type="text" ng-model="filter" placeholder="Cerca post...">
+  </nav>
 
   <div ng-repeat="news in posts.posts | filter:filter">
 
     <div class="row">
 
       <div class="news">
-        <a href="#news/{{news.ID}}"><h3 class="title">{{news.title}}</h3></a>
+        <a href="#news/{{news.ID}}">
+          <h3 class="title" ng-bind-html="news.title | to_trusted"></h3>
+        </a>
         <p class="text-muted"><span class="glyphicon glyphicon-calendar"></span> {{news.date | date:'medium'}}</p>
         <p class="text" ng-bind-html="news.excerpt | to_trusted"></p>
         <p ng-if="news.author" class="text-muted">Autore <a>{{news.author.login}}</a></p>
@@ -18,4 +22,5 @@
     <hr />
 
   </div>
+
 </section>
